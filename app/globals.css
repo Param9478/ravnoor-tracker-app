@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7fbfa;
+  --foreground: #1f2e2d;
+  --teal-950: #0f2e2d;
+  --teal-900: #133b3a;
+  --teal-800: #1a4c4b;
+  --teal-700: #226362;
+  --teal-600: #2c7a7b;
+  --teal-500: #319795;
+  --teal-100: #e6fffa;
+  --peach-500: #e8935c;
+  --peach-100: #fff3e8;
+  --cream: #fffaf0;
+  --border-soft: #dfe9e8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-teal-950: var(--teal-950);
+  --color-teal-900: var(--teal-900);
+  --color-teal-800: var(--teal-800);
+  --color-teal-700: var(--teal-700);
+  --color-teal-600: var(--teal-600);
+  --color-teal-500: var(--teal-500);
+  --color-teal-100: var(--teal-100);
+  --color-peach-500: var(--peach-500);
+  --color-peach-100: var(--peach-100);
+  --color-cream: var(--cream);
+  --color-border-soft: var(--border-soft);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+input, select, textarea, button {
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-soft);
+  border-radius: 4px;
+}
